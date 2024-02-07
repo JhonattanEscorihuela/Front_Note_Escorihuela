@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk';
-import authReducer from '../reducers/authReducers';
+import noteReducer from '../reducers/noteReducers';
 
 export const store = createStore(
-    authReducer,
+    noteReducer,
     composeWithDevTools(applyMiddleware(thunk)
     ));
 
